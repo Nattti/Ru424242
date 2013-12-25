@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/jackson-all-1.9.2-2e3c2f8dc9a8f4d1803782b09474254d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/jackson-all-1.8.6-d4d6333214d6a894230736600bad01b6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/gson-1.7.1-javadoc-5a0bb446f488c100998ab1dd1ca6ac8c.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/annotations-40c5b4f180c340b1f3a9f029dce6033d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/gson-1.7.1-f1ba000e3d86fcea9b38b07ccefe56c4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

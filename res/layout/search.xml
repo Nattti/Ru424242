@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llEntsS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/rgSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbEnterprise"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:onClick="onClickCustom"
+                android:text="@string/strEnterprise"
+                android:textColor="@color/black"
+                android:textSize="5pt" />
+
+            <RadioButton
+                android:id="@+id/rbGoods"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClickCustom"
+                android:text="@string/strGoods"
+                android:textColor="@color/black"
+                android:textSize="5pt" />
+        </RadioGroup>
+
+        <AutoCompleteTextView
+            android:id="@+id/actvSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="2"
+            android:dropDownHeight="wrap_content"
+            android:ellipsize="start" />
+
+        <ListView
+            android:id="@+id/lvEntsS"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDetailsS"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/llSearchHead"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:gravity="center"
+                android:minHeight="50px"
+                android:minWidth="80px"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivDetailsS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCallS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:onClick="onClickCustom"
+                android:text="@string/strCall"
+                android:textSize="6pt" />
+
+            <Button
+                android:id="@+id/btnAddS"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:onClick="onClickCustom"
+                android:text="@string/strToBriefcase"
+                android:textSize="6pt" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtNameS"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="TextView"
+            android:textSize="8pt"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtUnitS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="TextView"
+            android:textSize="6pt"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/txtWorktimeS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="6pt" />
+
+        <ExpandableListView
+            android:id="@+id/expDetailsS"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ExpandableListView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/svDetailsS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtDateS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="TextView"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/ivActionS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txtDescS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="TextView"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

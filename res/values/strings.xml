@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Справочная 42-42-42</string>
+    <string name="strPrimary">Главная</string>
+    <string name="strEnterprise">Предприятия</string>
+    <string name="strSearch">Поиск</string>
+    <string name="strNews">Новости</string>
+    <string name="strOnline">Спросить онлайн</string>
+    <string name="strBriefcase">Портфель</string>
+    <string name="strRefresh">Обновить</string>
+    <string name="strRates">Курсы валют:</string>
+    <string name="strUSD">USD</string>
+    <string name="strEUR">EUR</string>
+    <string name="strWeather">Погода:</string>
+    <string name="strGiveCall">Позвонить нам!</string>
+    <string name="strCatalog">Каталог</string>
+    <string name="strCall">Позвонить</string>
+    <string name="strToBriefcase">В портфель</string>
+    <string name="strFromBriefcase">Из портфеля</string>
+    <string name="strContacts">Контакты</string>
+    <string name="strAbout">О компании</string>
+    <string name="strGoods">Товары и услуги</string>
+    <string name="strActions">Акции</string>
+    <string name="strClose">Закрыть</string>
+    <string name="strBack">Закрыть программу?</string>
+    <string name="strYes">Да</string>
+    <string name="strNo">Нет</string>
+    <string-array name="menu_array">
+        <item >Поиск</item>
+        <item >Карта</item>
+        <item >Маршруты</item>
+        <item >Выгодные покупки</item>
+        <item >Афиша</item>
+        <item >Новости</item>
+        <item >Портфель</item>
+        <item >Настройки</item>
+    </string-array>
+</resources>

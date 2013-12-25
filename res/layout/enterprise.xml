@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llSearchBox"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <AutoCompleteTextView
+            android:id="@+id/actvSearchE"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:completionThreshold="3"
+            android:dropDownAnchor="@id/actvSearchE"
+            android:dropDownHeight="wrap_content"
+            android:ellipsize="start" />
+
+        <ExpandableListView
+            android:id="@+id/expEnt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white" >
+        </ExpandableListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llEntsE"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txtCatalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="8pt"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lvEntsE"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDetailsE"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/llEntHead"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:gravity="center"
+                android:minHeight="50px"
+                android:minWidth="80px"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/ivDetailsE"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:minHeight="50px"
+                    android:minWidth="80px" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCallE"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:onClick="onClickCustom"
+                android:text="@string/strCall"
+                android:textSize="6pt" />
+
+            <Button
+                android:id="@+id/btnAddE"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:onClick="onClickCustom"
+                android:text="@string/strToBriefcase"
+                android:textSize="6pt" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtNameE"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/txtUnitE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/txtWorkTimeE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="6pt" />
+
+        <ExpandableListView
+            android:id="@+id/expDetailsE"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ExpandableListView>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/svDetailsE"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtDateE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="TextView"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/ivActionE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txtDescE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="TextView"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

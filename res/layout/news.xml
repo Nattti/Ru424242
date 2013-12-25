@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <ListView
+        android:id="@+id/lvNewsCity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+    </ListView>
+
+    <ScrollView
+        android:id="@+id/svNewDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtNewsDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:background="@color/white"
+                android:text="TextView"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/ivNewsDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp" />
+
+            <TextView
+                android:id="@+id/txtNewsDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:background="@color/white"
+                android:text="TextView"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

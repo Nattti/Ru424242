@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/gson-1.7.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jackson-all-1.9.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/gson-1.7.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jackson-all-1.8.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@android:id/text1"
+    style="?android:attr/dropDownItemStyle"
+    android:textAppearance="?android:attr/textAppearanceSmallInverse"
+    android:singleLine="true"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="3sp"
+    android:paddingBottom="3sp"
+    android:ellipsize="marquee" />

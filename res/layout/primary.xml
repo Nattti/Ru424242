@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlPrimary"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5sp"
+        android:background="@drawable/tab_refresh"
+        android:onClick="onClickCustom" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/logo"
+        android:maxWidth="30dip"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLogo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnGiveCall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onClickCustom"
+            android:padding="5dp"
+            android:text="@string/strGiveCall"
+            android:textSize="6pt" />
+
+        <Button
+            android:id="@+id/btnBriefCase"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onClickCustom"
+            android:padding="5dp"
+            android:text="@string/strBriefcase"
+            android:textSize="6pt" />
+
+        <Button
+            android:id="@+id/btnNews"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="onClickCustom"
+            android:padding="5dp"
+            android:text="@string/strOnline"
+            android:textSize="6pt" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llButtons"
+        android:gravity="center"
+        android:text="Афиша города"
+        android:textColor="@color/black"
+        android:textSize="8pt" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/tableLayout1"
+        android:layout_below="@+id/textView3" >
+
+        <ListView
+            android:id="@+id/lvAfisha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lvAfishaDet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <ScrollView
+            android:id="@+id/svAfishaDet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5sp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtDateA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:background="@color/white"
+                    android:text="TextView"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/ivActionA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/txtDescA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:background="@color/white"
+                    android:text="TextView"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp"
+                android:text="@string/strRates"
+                android:textColor="@color/black"
+                android:textSize="6pt" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp"
+                android:text="@string/strUSD"
+                android:textColor="@color/black"
+                android:textSize="6pt" />
+
+            <TextView
+                android:id="@+id/txtUSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp"
+                android:text="0.00"
+                android:textColor="@color/black"
+                android:textSize="6pt" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp"
+                android:text="@string/strEUR"
+                android:textColor="@color/black"
+                android:textSize="6pt" />
+
+            <TextView
+                android:id="@+id/txtEUR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3sp"
+                android:text="0.00"
+                android:textColor="@color/black"
+                android:textSize="6pt" />
+        </TableRow>
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/ivWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@id/tableLayout1"
+        android:layout_margin="5sp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivWeather"
+        android:layout_margin="3sp"
+        android:layout_toRightOf="@id/ivWeather"
+        android:text="@string/strWeather"
+        android:textColor="@color/black"
+        android:textSize="6pt" />
+
+    <TextView
+        android:id="@+id/txtWeatherWal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWeather"
+        android:layout_margin="3sp"
+        android:layout_toRightOf="@id/ivWeather"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="6pt" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ivWeather"
+        android:text="00/00/00"
+        android:textColor="@color/black"
+        android:textSize="6pt"
+        android:visibility="gone" />
+
+</RelativeLayout>
